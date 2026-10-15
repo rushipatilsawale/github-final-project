@@ -1,56 +1,68 @@
 # Simple Interest Calculator
 
 ## 📌 Project Description
-The Simple Interest Calculator is a simple project that calculates the interest earned or paid on a principal amount over a specific period at a given annual interest rate.
+The **Simple Interest Calculator** is a lightweight project designed to calculate the interest earned or paid on a principal amount over a specific period at a given annual interest rate, along with the total payable amount.
+
+---
 
 ## 🎯 Objective
-The objective of this project is to understand the concept of simple interest and implement its calculation using a mathematical formula.
+To understand financial interest concepts and implement programmatic calculations using a standard mathematical formula.
+
+---
 
 ## 🧮 Formula
-Simple Interest is calculated using the following formula:
+Simple Interest is computed using the following standard formula:
 
-**Simple Interest = (Principal × Rate × Time) / 100**
+$$\text{Simple Interest} = \frac{\text{Principal} \times \text{Rate} \times \text{Time}}{100}$$
 
 Where:
-- **Principal (P):** The initial amount of money.
-- **Rate (R):** The annual interest rate in percentage.
-- **Time (T):** The time period in years.
+* **Principal ($P$):** The initial amount of money borrowed or invested.
+* **Rate ($R$):** The annual interest rate (in percentage).
+* **Time ($T$):** The time period (in years).
 
-**Total Amount = Principal + Simple Interest**
+$$\text{Total Amount} = \text{Principal} + \text{Simple Interest}$$
 
-## 💻 Example
-Suppose:
-- Principal = ₹10,000
-- Rate = 5% per year
-- Time = 2 years
+---
 
-Calculation:
+## 💻 Example Calculation
+* **Principal ($P$):** ₹10,000
+* **Rate ($R$):** 5% per year
+* **Time ($T$):** 2 years
 
-Simple Interest = (10000 × 5 × 2) / 100
+$$\text{Simple Interest} = \frac{10000 \times 5 \times 2}{100} = ₹1,000$$
 
-Simple Interest = ₹1,000
+$$\text{Total Amount} = ₹10,000 + ₹1,000 = ₹11,000$$
 
-Total Amount = ₹10,000 + ₹1,000 = ₹11,000
+---
 
 ## ⚙️ Features
-- Calculates simple interest.
-- Calculates the total amount payable.
-- Easy to understand and use.
-- Demonstrates the practical application of a mathematical formula.
+* Calculates exact simple interest.
+* Computes the total cumulative amount.
+* Clean, easy-to-understand implementation logic.
+
+---
 
 ## 🚀 How It Works
-1. Enter the principal amount.
-2. Enter the annual interest rate.
-3. Enter the time period in years.
-4. Calculate the simple interest using the formula.
-5. Add the interest to the principal to get the total amount.
+1. Input the principal amount.
+2. Input the annual interest rate percentage.
+3. Input the time period in years.
+4. Process values through the calculation formula to generate outputs.
 
-## 📚 Technologies Used
-- Mathematical formulas
-- Basic programming concepts (depending on the implementation language)
+---
 
-## 👨‍💻 Author
-Rushikesh Sawale
+## 💻 Sample Code Implementation (Python)
 
-## 📄 License
-This project is open-source and available for educational purposes.
+```python
+def calculate_simple_interest(principal, rate, time):
+    interest = (principal * rate * time) / 100
+    total_amount = principal + interest
+    return interest, total_amount
+
+# Example usage:
+p = 10000
+r = 5
+t = 2
+
+si, total = calculate_simple_interest(p, r, t)
+print(f"Simple Interest: ₹{si}")
+print(f"Total Amount: ₹{total}")
